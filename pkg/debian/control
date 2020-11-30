@@ -1,0 +1,21 @@
+Source: ustreamer
+Priority: optional
+Standards-Version: 4.5.1
+Section: video
+Maintainer: Maxim Devaev <mdevaev@gmail.com>
+Build-Depends: debhelper (>= 11),
+  wget,
+  build-essential,
+  libevent-dev,
+  libjpeg62-turbo-dev,
+  uuid-dev,
+  libbsd-dev
+Homepage: https://pikvm.org/
+Vcs-Browser: https://github.com/pikvm/ustreamer
+Vcs-Git: https://github.com/pikvm/ustreamer.git
+
+Package: ustreamer
+Architecture: any
+Priority: optional
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight and fast MJPG-HTTP streamer
